@@ -1,3 +1,7 @@
+body {
+	overflow-x: hidden;
+}
+
 nav a.nav-link {
 	margin-left: 1rem;
 }
@@ -311,7 +315,7 @@ section.noticeboard .noticeboard-text-wrapper .noticeboard-content-wrapper > p {
 }
 
 .wave2 {
-	background-image: url('../media/waves/red-wave-5.svg');
+	background-image: url('../media/waves/red-wave-6.svg');
 	aspect-ratio: 1600/250;
 	width: 110%;
 	margin-left: -5%;
@@ -319,11 +323,6 @@ section.noticeboard .noticeboard-text-wrapper .noticeboard-content-wrapper > p {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-}
-
-section.testimonials {
-	min-height: 100vh;
-	background: #eee;
 }
 
 @media (max-width: 1000px) {
@@ -343,6 +342,248 @@ section.testimonials {
 	}
 
 }
+
+section.testimonials {
+	margin-top: -1rem;
+	background: #B6D0E2;
+}
+
+section.testimonials .testimonial-wrapper {
+	max-width: 80vw;
+	margin: auto;
+}
+
+section.testimonials .testimonial-wrapper > h2 {
+	font-size: 3rem;
+	padding-bottom: 2rem;
+	text-align: center;
+}
+
+section.testimonials .quotecard {
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 70ch;
+	border: 1px solid #ddd;
+	border-radius: 2rem;
+	background: #eee;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+	transition: none;
+}
+
+section.testimonials .quotecard .content {
+	padding: 2rem;
+	position: relative;
+}
+
+section.testimonials .quotecard .content .icon {
+	font-size: 3rem;
+	color: #A020F0;
+}
+
+section.testimonials .quotecard .content .text {
+	padding: 0.5rem;
+}
+
+section.testimonials .quotecard .content .text > p {
+	color: #333;
+	font-size: 1.15rem;
+	line-height: 1.9;
+	font-style: italic;
+}
+
+section.testimonials .quotecard .content .signature {
+	padding: 1rem 3rem 0rem 0rem;
+}
+
+section.testimonials .quotecard .content .signature > .name {
+	text-align: right;
+	color: #333;
+	font-size: 1.5rem;
+}
+
+section.testimonials .quotecard .content .signature > .position {
+	text-align: right;
+	color: #666;
+	font-size: 0.8rem;
+}
+
+section.testimonials .quotecard {
+	display: none;
+}
+
+section.testimonials .quotecard.qc-active {
+	display: revert;
+}
+
+section.testimonials .testimonial-carousel {
+	padding-top: 5rem;
+	padding-bottom: 10rem;
+	position: relative;
+}
+
+section.testimonials .testimonial-carousel .fakequotecard {
+	position: absolute;
+	background: #666;
+	width: 15vw;
+	height: 35vh;
+	border-radius: 2rem;
+	opacity: 0.4;
+	top: calc(50% - 1rem);
+}
+
+section.testimonials .testimonial-carousel .fakequotecard.one {
+	left: 30%;
+	transform: translate(-50%, -50%);
+}
+
+section.testimonials .testimonial-carousel .fakequotecard.two {
+	right: 30%;
+	transform: translate(50%, -50%);
+}
+
+section.testimonials .testimonial-carousel .arrow {
+	position: absolute;
+	font-size: 4rem;
+	top: calc(50% - 2.5rem);
+	z-index: 10;
+	cursor: pointer;
+	color: purple;
+	transition: color 0.1s ease-out;
+}
+
+section.testimonials .testimonial-carousel .arrow:hover {
+	color: #ad77fd;
+}
+
+section.testimonials .testimonial-carousel .arrow.left {
+	left: 15%;
+}
+
+section.testimonials .testimonial-carousel .arrow.right {
+	right: 15%;
+}
+
+section.testimonials .testimonial-carousel > .quotecard.go-out-right {
+	position: absolute;
+	display: revert;
+	animation: go-out-left 0.5s ease-out forwards;
+}
+
+ @keyframes go-out-left {
+
+	 from {
+		 transform: translate(-50%, -50%) scale(1);
+		 opacity: 1;
+		 left: 50%;
+	 }
+
+	 to {
+		 transform: translate(-50%, -50%) scale(0.7);
+		 opacity: 0;
+		 left: 20%;
+	 }
+
+}
+
+section.testimonials .testimonial-carousel > .quotecard.go-in-right {
+	position: absolute;
+	display: revert;
+	animation: go-in-left 0.5s ease-out forwards;
+}
+
+ @keyframes go-in-left {
+
+	 from {
+		 transform: translate(-50%, -50%) scale(0.7);
+		 opacity: 0;
+		 left: 80%;
+	 }
+
+	 to {
+		 transform: translate(-50%, -50%) scale(1);
+		 opacity: 1;
+		 left: 50%;
+	 }
+
+ }
+
+section.testimonials .testimonial-carousel > .quotecard.go-out-left {
+	position: absolute;
+	display: revert;
+	animation: go-out-right 0.5s ease-out forwards;
+}
+
+ @keyframes go-out-right {
+
+	 from {
+		 transform: translate(-50%, -50%) scale(1);
+		 opacity: 1;
+		 left: 50%;
+	 }
+
+	 to {
+		 transform: translate(-50%, -50%) scale(0.7);
+		 opacity: 0;
+		 left: 80%;
+	 }
+
+}
+
+section.testimonials .testimonial-carousel > .quotecard.go-in-left {
+	position: absolute;
+	display: revert;
+	animation: go-in-right 0.5s ease-out forwards;
+}
+
+ @keyframes go-in-right {
+
+	 from {
+		 transform: translate(-50%, -50%) scale(0.7);
+		 opacity: 0;
+		 left: 20%;
+	 }
+
+	 to {
+		 transform: translate(-50%, -50%) scale(1);
+		 opacity: 1;
+		 left: 50%;
+	 }
+
+}
+
+.wave3 {
+	background-image: url('../media/waves/blue-wave-1.svg');
+	aspect-ratio: 1600/250;
+	width: 110%;
+	margin-left: -5%;
+	margin-top: -1%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+section.contact {
+	background: #eee;
+	height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
