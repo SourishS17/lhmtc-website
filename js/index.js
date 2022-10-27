@@ -3,10 +3,8 @@ var cards = document.querySelectorAll("section.testimonials .testimonial-carouse
 var heights = [];
 
 for (let i = 0; i < cards.length; i ++) {
-	console.log(i);
 	heights.push(cards[i].offsetHeight);
 	cards[i].classList.remove("qc-active");
-	console.log(heights);
 }
 
 cards[0].classList.add("qc-active");

@@ -34,6 +34,88 @@
 	color: var(--text);
 }
 
+body {
+	overflow-x: hidden !important;
+}
+
+nav a.nav-link {
+	margin-left: 1rem;
+}
+
+nav a.nav-link:hover {
+	color: #111;
+	transition: color 0.2s;
+}
+
+@media (max-width: 767px) {
+
+	nav .navbar-nav > a#aboutus {
+		display: none;
+	}
+
+}
+
+footer {
+	width: 100vw;
+	background: #f2cef8;
+}
+
+footer * {
+	margin: revert !important;
+}
+
+footer .footer-wrapper {
+	position: relative;
+	padding: 1rem 2rem;
+	max-width: 2000px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+}
+
+footer .footer-wrapper .row1 {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+footer .footer-wrapper .row1 > div {
+	flex: 1;
+} 
+
+footer .footer-wrapper .row1 .contact {
+	text-align: left;
+}
+
+footer .footer-wrapper .row1 .primary {
+	text-align: center;
+}
+
+footer .footer-wrapper .row1 .primary .copyright .things {
+	align-items: center;
+	margin: auto;
+}
+
+footer .footer-wrapper .row1 .primary .copyright .things > * {
+	display: inline;
+}
+
+footer .footer-wrapper .row1 .primary .copyright .things .far {
+	padding-right: 0.5rem;
+}
+
+footer .footer-wrapper .row1 .follow {
+	text-align: right;
+}
+
+footer .footer-wrapper .row1 .primary .follow .icons > span {
+	display: inline;
+	color: blue;
+	position: absolute;
+}
+
+
 
 
 
