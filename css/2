@@ -62,8 +62,6 @@ footer {
 
 footer * {
 	margin: revert !important;
-	margin-top: 0rem !important;
-	margin-bottom: 0rem !important;
 }
 
 footer .footer-wrapper {
@@ -82,11 +80,6 @@ footer .footer-wrapper .row1 {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	padding-top: 0.5rem;
-}
-
-footer .footer-wrapper .row1 a {
-	color: #222;
 }
 
 footer .footer-wrapper .row1 > div {
@@ -97,23 +90,17 @@ footer .footer-wrapper .row1 .contact {
 	text-align: left;
 }
 
-footer .footer-wrapper .row1 .contact .top-text {
-	padding-bottom: 0.5rem;
-	font-weight: bold;
+footer .footer-wrapper .row1 .contact p {
+	margin: 0rem !important;
 }
 
 footer .footer-wrapper .row1 .contact .bottom {
 	display: flex;
 	flex-direction: row;
-	gap: 25px;
 }
 
 footer .footer-wrapper .row1 .primary {
 	text-align: center;
-}
-
-footer .footer-wrapper .row1 .primary .copyright {
-	padding-bottom: 0.5rem;
 }
 
 footer .footer-wrapper .row1 .primary .copyright .things {
@@ -133,85 +120,16 @@ footer .footer-wrapper .row1 .follow {
 	text-align: right;
 }
 
-footer .footer-wrapper .row1 .follow .top-text {
-	padding-bottom: 0.5rem;
-	font-weight: bold;
+footer .footer-wrapper .row1 .primary .follow .icons > span {
+	display: inline;
+	color: blue;
+	position: absolute;
 }
 
-footer .footer-wrapper .row1 .follow .icons a {
-	padding-left: 1.25rem;
-	color: #222;
-	font-size: 1.5rem;
-}
 
-footer .footer-wrapper .row1 .follow .icons a > span {
-	transition: color 0.1s linear;
-}
 
-footer .footer-wrapper .row1 .follow .icons a > span:hover {
-	color: #555;
-}
 
-footer .footer-wrapper .row2 {
-	display: flex;
-	flex-direction: row;
-	padding: 2rem 0rem 1rem 0rem;
-	gap: 2rem;
-	justify-content: center;
-}
 
-footer .footer-wrapper .row3 {
-	padding: 0rem 0rem 0rem 0rem;
-	font-size: 0.8rem;
-	text-align: center;
-	line-height: 2.0;
-}
-
-@media (max-width: 1200px) {
-
-	footer .footer-wrapper .row1 .contact .bottom {
-		flex-direction: column;
-		gap: 0.5rem;
-	}
-
-}
-
-@media (max-width: 600px) {
-
-	footer .footer-wrapper .row1 {
-		flex-direction: column;
-	}
-
-	footer .footer-wrapper .row1 .primary {
-		order: -1;
-	}
-
-	footer .footer-wrapper .row1 .primary .copyright {
-		font-weight: bold;
-	}
-
-	footer .footer-wrapper .row1 > * {
-		width: 100% !important;
-		text-align: center !important;
-		padding: 1rem 0rem 2rem 0rem;
-	}
-
-	footer .footer-wrapper .row1 .follow .icons a:first-child {
-		padding-left: 0rem;
-	}
-
-	footer .footer-wrapper .row2 {
-		flex-direction: column;
-		gap: 0.25rem;
-		width: 100%;
-	}
-
-	footer .footer-wrapper .row2 > * {
-		width: 100%;
-		text-align: center;
-	}
-	
-}
 
 
 

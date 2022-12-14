@@ -273,6 +273,7 @@ section.about .about-text-wrapper .about-content-wrapper h2.small {
 	background-image: url('../media/waves/red-wave-3.svg');
 	aspect-ratio: 1500/50;
 	width: 100%;
+	margin-top: -1%;
 	background-repeat: repeat;
 	background-position: center;
 	background-size: cover;
