@@ -1,0 +1,194 @@
+section.intro {
+	background: #7200ab;
+	color: #eee;
+}
+
+section.intro .wrapper {
+	max-width: 80vw;
+	margin: auto;
+	text-align: center;
+	padding-top: 7vh;
+}
+
+section.intro .wrapper > h1 {
+	font-weight: bold;
+	font-size: 8rem;
+}
+
+section.intro .wrapper > p {
+	padding-top: 6vh;
+	font-size: 1.25rem;
+	margin-bottom: 0px;
+}
+
+.wave {
+	background-image: url('../media/waves/purple-wave-7.svg');
+	aspect-ratio: 1600/250;
+	width: 100vw;
+	margin-top: -6%;
+	background-repeat: repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+section.awards {
+	background: #eee;
+	width: 100vw;
+}
+
+section.awards .wrapper {
+	max-width: 80vw;
+	margin: auto;
+	background: #eee;
+}
+
+section.awards .wrapper .award {
+	width: 100%;
+	padding-bottom: 10vh;
+	opacity: 0;
+}
+
+section.awards .wrapper .award > h2 {
+	text-align: center;
+	line-height: 2.0;
+}
+
+section.awards .wrapper .award > p.year {
+	text-align: center;
+	color: #555;
+	margin-top: -1vh;
+	margin-bottom: 2vh;
+}
+
+section.awards .wrapper .award > p.context {
+	text-align: center;
+}
+
+section.awards .wrapper .award .imgs {
+	align-items: center;
+	width: 100%;
+}
+
+section.awards .wrapper .award .imgs > img {
+	display: block;
+	margin: auto;
+}
+
+section.awards .wrapper .award .imgs img {
+	border-radius: 1rem;
+}
+
+section.awards .wrapper .award .imgs > img.p {
+	width: 30%;
+}
+
+section.awards .wrapper .award .imgs > img.l {
+	width: 40%;
+}
+
+section.awards .wrapper .award .imgs > .additional {
+	width: 40%;
+	height: 20vh;
+	margin: auto;
+	display: flex;
+	gap: 2vh;
+	margin-top: 2vh;
+	justify-content: center;
+}
+
+@keyframes fade-in {
+
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+
+}
+
+@media (max-width: 1000px) {
+
+	section.intro .wrapper > h1 {
+		font-size: 6rem;
+	}
+
+	section.intro .wrapper > p {
+		padding-top: 5vh;
+		font-size: 1rem;
+	}
+
+	section.awards .wrapper .award > p.year {
+		font-size: 0.9rem;
+		margin-top: -2vh;
+		margin-bottom: 3vh;
+	}
+
+	section.awards .wrapper .award > p.context {
+		font-size: 0.9rem;
+		margin-bottom: 4vh;
+	}
+
+	section.awards .wrapper .award {
+		padding-bottom: 15vh;
+	}
+
+}
+
+@media (max-width: 600px) {
+
+	section.intro .wrapper > h1 {
+		font-size: 4rem;
+	}
+
+	section.intro .wrapper > p {
+		padding-top: 4vh;
+		font-size: 0.9rem;
+		padding-bottom: 8vh;
+	}
+	section.awards .wrapper .award > p.context {
+		font-size: 0.85rem;
+	}
+
+	section.awards .wrapper .award .imgs > img.p {
+		width: 70%;
+	}
+
+	section.awards .wrapper .award .imgs > img.l {
+		width: 85%;
+	}
+
+	section.awards .wrapper .award .imgs > .additional {
+		width: 80%;
+		height: 15vh;
+		display: flex;
+		flex-wrap: wrap;
+		display: none;
+	}
+	
+	section.awards .wrapper .award .imgs > .additional > img {
+		height: 100%;
+		width: auto;
+		display: none;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

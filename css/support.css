@@ -1,0 +1,354 @@
+section.intro {
+	min-height: 105vh;
+	background-image: url("../media/support/blurry.png");
+	background-size: cover;
+	margin-top: -5vh;
+}
+
+section.intro .wrapper .left {
+	padding-top: 35vh;
+	padding-left: 5vw;
+}
+
+section.intro .wrapper .left > h1 {
+	font-size: 10rem;
+	font-weight: bold;
+	color: #eee;
+}
+
+section.intro .wrapper .left > p {
+	padding-top: 3vh;
+	max-width: 40ch;
+	line-height: 1.7;
+	color: #ccc;
+	font-size: 2rem;
+}
+
+section.intro .wrapper {
+	position: relative;
+}
+
+section.intro .wrapper .left button.donate {
+	background-color: #77dd77;
+	color: #222;
+	font-size: 3rem;
+	border-radius: 20px;
+	padding: 1rem 2rem 1rem 2rem;
+	margin-top: 2vh;
+	transition: 0.2s ease-out;
+	transform: scale(1);
+}
+
+section.intro .wrapper .left button.donate:hover {
+	transform: scale(1.2);
+	color: #000;
+}
+
+section.intro .wrapper .right {
+	position: absolute;
+	left: 5vw;
+	top: 70vh;
+}
+
+section.intro .wrapper .right .wrapper button.donate {
+	background-color: #ff6961;
+	color: white;
+	font-size: 3rem;
+	border-radius: 20px;
+	padding: 1rem 2rem 1rem 2rem;
+}
+
+.wave {
+	background-image: url('../media/waves/white-wave-1.svg');
+	aspect-ratio: 1600/250;
+	width: 100%;
+	margin-left: 0%;
+	margin-top: -15%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+section.fundraising {
+	background-color: #eee;
+	width: 100vw;
+	padding-bottom: 10vh;
+}
+
+section.fundraising .wrapper {
+	max-width: 70vw;
+	margin: auto;
+}
+
+section.fundraising .wrapper .title > h2 {
+	font-size: 3rem;
+	text-align: center;
+}
+
+section.fundraising .wrapper .content {
+	margin-top: 10vh;
+}
+
+section.fundraising .wrapper .content .event {
+	display: flex;
+	gap: 1rem;
+	max-width: 75%;
+	margin: auto;
+	align-items: center;
+	text-align: left;
+	padding-bottom: 5vh;
+}
+
+section.fundraising .wrapper .content .event:nth-child(2n) {
+	text-align: right;
+}
+
+section.fundraising .wrapper .content .event .image {
+	padding: 2rem;
+	flex: 1 1 0;
+}
+
+section.fundraising .wrapper .content .event .text {
+	padding: 2rem;
+	padding-top: -5%;
+	flex: 4 1 0;
+}
+
+section.fundraising .wrapper .content .event .image img {
+	min-height: 20vh;
+	border-radius: 2rem;
+	object-fit: contain;
+}
+
+section.fundraising .wrapper .content .event .text > h3 {
+	font-size: 2rem;
+	color: #111;
+}
+
+section.fundraising .wrapper .content .event .text > p {
+	margin-top: 1.5rem;
+	font-size: 1.25rem;
+	line-height: 2.0;
+	color: #111;
+}
+
+section.banner {
+	background: #ff6961;
+	padding: 5vh 0rem 5vh 0rem;
+}
+
+section.banner .wrapper {
+	max-width: 80vw;
+	margin: auto;
+}
+
+section.banner .wrapper > h3 {
+	color: #eee;
+	text-align: center;
+	line-height: 1.7;
+}
+
+section.sponsor {
+	height: 100vh;
+	background: #eee;
+}
+
+
+
+@media (max-width: 2000px) {
+
+	section.fundraising .wrapper .content .event {
+		max-width: 100%;
+	}
+
+	section.banner .wrapper > h3 {
+		font-size: 1.5rem;
+	}
+
+}
+
+
+@media (max-width: 1600px) {
+
+	section.intro .wrapper .left > h1 {
+		font-size: 7rem;
+	}
+
+	section.intro .wrapper .left > p {
+		font-size: 1.5rem;
+	}
+
+	section.intro .wrapper .left button.donate {
+		font-size: 2rem;
+	}
+
+	section.fundraising .wrapper .content .event .text > h3 {
+		font-size: 1.75rem;
+	}
+
+	section.fundraising .wrapper .content .event .text > p {
+		margin-top: 1.25rem;
+		font-size: 1rem;
+		line-height: 1.8;
+	}
+
+	section.banner .wrapper > h3 {
+		font-size: 1.5rem;
+	}
+
+}
+
+@media (max-width: 1200px) {
+
+	section.intro .wrapper .left {
+		padding-top: 30vh;
+	}
+
+	section.fundraising .wrapper {
+		max-width: 90vw;
+	}
+
+	section.banner .wrapper > h3 {
+		font-size: 1.25rem;
+	}
+
+	section.banner .wrapper {
+		max-width: 90vw;
+	}
+
+}
+
+@media (max-width: 1000px) {
+
+	section.intro .wrapper .left > h1 {
+		font-size: 5rem;
+	}
+
+	section.intro .wrapper .left > p {
+		font-size: 1.25rem;
+	}
+
+	section.intro .wrapper .left button.donate {
+		font-size: 1.5rem;
+		padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+	}
+
+}
+
+@media (max-width: 600px) {
+
+	section.intro {
+		min-height: 0vh;
+		height: 95vh;
+		background-image: url("../media/support/blurry1.png");
+		background-size: cover;
+		margin-top: -5vh;
+		overflow: hidden;
+	}
+
+	section.intro .wrapper .left {
+		padding-top: 20vh;
+		padding-left: 5vw;
+		padding-right: 10vw;
+		position: relative;
+	}
+
+	section.intro .wrapper .left > h1 {
+		font-size: 4.25rem;
+	}
+
+	section.intro .wrapper .left > p {
+		padding-top: 2vh;
+		max-width: 30ch;
+		line-height: 1.6;
+		font-size: 1rem;
+	}
+
+	section.intro .wrapper .left button.donate {
+		position: absolute;
+		font-size: 1.5rem;
+		border-radius: 20px;
+		padding: 1rem 2rem 1rem 2rem;
+		left: 50%;
+		bottom: -15vh;
+		transform: translate(-50%, 0%);
+	}
+
+	section.intro .wrapper .left button.donate:hover {
+		transform: translate(-50%, 0%);
+		color: #222;
+	}
+
+	section.fundraising {
+		padding-bottom: 8vh;
+	}
+
+	section.fundraising .wrapper {
+		max-width: 100vw;
+	}
+
+	section.fundraising .wrapper .title > h2 {
+		font-size: 2.5rem;
+		padding-top: 5vh;
+	}
+
+	section.fundraising .wrapper .content {
+		margin-top: 5vh;
+	}
+
+	section.fundraising .wrapper .content .event {
+		flex-direction: column;
+		gap: 1rem;
+		max-width: 100%;
+		text-align: center;
+		padding-bottom: 5vh;
+	}
+
+	section.fundraising .wrapper .content .event:nth-child(2n) {
+		text-align: center;
+	}
+
+	section.fundraising .wrapper .content .event .image {
+		order: -1;
+		padding: 2rem;
+	}
+
+	section.fundraising .wrapper .content .event .text {
+		max-width: 90%;
+		margin-top: -2rem;
+	}
+
+	section.fundraising .wrapper .content .event .image img {
+		max-width: 70vw;
+		border-radius: 1rem;
+	}
+
+	section.fundraising .wrapper .content .event .text > h3 {
+		font-size: 1.5rem;
+	}
+
+	section.fundraising .wrapper .content .event .text > p {
+		margin-top: 1rem;
+		font-size: 1rem;
+		line-height: 1.8;
+	}
+
+	section.banner .wrapper > h3 {
+		line-height: 1.6;
+	}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+

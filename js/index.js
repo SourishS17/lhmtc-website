@@ -51,3 +51,12 @@ function homeCarouselMove(direction) {
 
 }
 
+
+
+
+
+
+
+
+
+
