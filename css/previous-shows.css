@@ -1,0 +1,97 @@
+section.intro {
+	padding: 10vh 0rem 10vh 0rem;
+	background: #eee;
+}
+
+section.intro > h1 {
+	font-weight: bold;
+	font-size: 5rem;
+	text-align: center;
+	color: #111;
+}
+
+section.table {
+	background: #eee;
+	padding-bottom: 10vh;
+	margin-bottom: 0px;
+	color: #222;
+}
+
+section.table table {
+	border-collapse: collapse;
+	border-radius: 1rem;
+	width: 100rem;
+	max-width: 90%;
+	margin: auto;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.05), -2px -2px 2px 1px rgba(0, 0, 0, 0.05);
+}
+
+section.table table thead {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	position: relative;
+}
+
+section.table table thead tr {
+	border: 0;
+}
+
+section.table table thead::after {
+	content: "";
+	width: 98%;
+	border-bottom: 1px dashed grey;
+	position: absolute;
+	margin: -1rem 1%;
+}
+
+section.table table thead tr td {
+	padding: 0.5rem 1rem 1.5rem 1rem;
+}
+
+section.table table thead tr td:nth-child(5),
+section.table table thead tr td:nth-child(4) {
+	text-align: center;
+}
+
+section.table table tbody > * {
+	font-size: 1.25rem;
+	border: 0;
+}
+
+section.table table tbody tr td:last-child,
+section.table table tbody tr td:nth-last-child(2) {
+	text-align: center;
+}
+
+section.table table tbody tr td {
+	transition: 0.1s linear;
+}
+
+section.table table tbody tr td[rowspan] {
+	pointer-events: none;
+}
+
+section.table table tbody tr:hover :not([rowspan]) {
+	color: #966fd6;
+}
+
+section.table table tbody tr td {
+	padding: 0.5rem 1rem;
+}
+
+section.table table tbody tr td[rowspan] ~ *,
+section.table table tbody tr td[rowspan] {
+	padding: 1rem 1rem 0.5rem 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -14,6 +14,20 @@ section.intro .wrapper .left > h1 {
 	font-size: 10rem;
 	font-weight: bold;
 	color: #eee;
+	opacity: 0;
+	animation: title 0.8s ease-in forwards;
+}
+
+@keyframes title {
+
+	0% {
+		opacity: 0;
+	}
+	
+	100% {
+		opacity: 1;
+	}
+
 }
 
 section.intro .wrapper .left > p {
@@ -22,6 +36,8 @@ section.intro .wrapper .left > p {
 	line-height: 1.7;
 	color: #ccc;
 	font-size: 2rem;
+	opacity: 0;
+	animation: title 1s 1.25s ease-in forwards;
 }
 
 section.intro .wrapper {
@@ -37,6 +53,8 @@ section.intro .wrapper .left button.donate {
 	margin-top: 2vh;
 	transition: 0.2s ease-out;
 	transform: scale(1);
+	opacity: 0;
+	animation: title 0.2s 2.5s ease-in forwards;
 }
 
 section.intro .wrapper .left button.donate:hover {
@@ -149,10 +167,149 @@ section.banner .wrapper > h3 {
 }
 
 section.sponsor {
-	height: 100vh;
 	background: #eee;
 }
 
+section.sponsor .wrapper {
+	max-width: 80vw;
+	margin: auto;
+	padding: 15vh 0rem 10vh 0rem;
+}
+
+section.sponsor .wrapper .title > h2 {
+	font-size: 3rem;
+	text-align: center;
+}
+
+section.sponsor .wrapper .content {
+	padding-top: 8vh;
+	display: flex;
+}
+
+section.sponsor .wrapper .content > .thing {
+	flex: 1;
+	text-align: center;
+}
+
+section.sponsor .wrapper .content > .thing .title {
+	font-size: 2rem;
+}
+
+section.sponsor .wrapper .content > .thing .block {
+	position: relative;
+	width: 50%;
+	margin: auto;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+section.sponsor .wrapper .content > .thing .block > img {
+	border-radius: 1rem;
+	width: 100%;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+}
+
+section.sponsor .wrapper .content > .thing .block > p {
+	display: none;
+	transition: 0.2s ease-out;
+}
+
+section.sponsor .wrapper .content > .thing .block:hover > img {
+	opacity: 0.2;
+	border: 2px solid grey;
+	transition: 0.2s ease-out;
+}
+
+section.sponsor .wrapper .content > .thing .block:hover > p {
+	font-size: 1.25rem;
+	display: revert;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	max-width: 20ch;
+	transform: translate(-50%, -50%);
+}
+
+section.sponsor .wrapper .content > .thing .text {
+	font-size: 1.25rem;
+	max-width: 80%;
+	margin: auto;
+}
+
+section.sponsor .wrapper .content > .thing .text > span {
+	font-weight: bold;
+	color: purple;
+}
+
+section.email-reminder {
+	background: #eee;
+}
+
+section.email-reminder .wrapper {
+	padding-top: 0vh;
+	text-align: center;
+}
+
+section.email-reminder .wrapper button {
+	background-color: #8bd3e6;
+	color: #222;
+	font-size: 3rem;
+	border-radius: 100vh;
+	padding: 1rem 2.5rem 1rem 2.5rem;
+	transition: 0.2s ease-out;
+}
+
+section.email-reminder .wrapper button:hover {
+	background-color: #779ecb;
+	color: #fff;
+	cursor: pointer;
+}
+
+section.patrons {
+	background: #eee;
+}
+
+section.patrons .wrapper {
+	max-width: 80vw;
+	margin: auto;
+	padding: 20vh 0rem 10vh 0rem;
+}
+
+section.patrons .wrapper .title > h2 {
+	font-size: 3rem;
+	text-align: center;
+}
+
+section.patrons .wrapper .content {
+	padding-top: 5vh;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section.patrons .wrapper .content .thing {
+	flex: 1;
+	height: 40vh;
+	padding: 1rem;
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+section.patrons .wrapper .content .thing .image {
+	height: calc(100% - 1rem);
+	padding-bottom: 1rem;
+}
+
+section.patrons .wrapper .content .thing .image > img {
+	border-radius: 1rem;
+	height: 100%;
+	aspect-ratio: 3/4;
+	object-fit: cover;
+}
+
+section.patrons .wrapper .content .thing > h3 {
+	font-size: 1.75rem;
+}
 
 
 @media (max-width: 2000px) {
@@ -166,7 +323,6 @@ section.sponsor {
 	}
 
 }
-
 
 @media (max-width: 1600px) {
 
@@ -196,6 +352,27 @@ section.sponsor {
 		font-size: 1.5rem;
 	}
 
+	section.sponsor .wrapper {
+		max-width: 90vw;
+	}
+
+	section.sponsor .wrapper .content > .thing .text {
+		font-size: 1.15rem;
+		max-width: 70%;
+	}
+
+	section.sponsor .wrapper .content > .thing .block:hover > p {
+		font-size: 1rem;
+	}
+
+	section.sponsor .wrapper {
+		padding: 20vh 0rem 10vh 0rem;
+	}
+
+	section.email-reminder .wrapper button {
+		font-size: 2.5rem;
+	}
+
 }
 
 @media (max-width: 1200px) {
@@ -216,6 +393,48 @@ section.sponsor {
 		max-width: 90vw;
 	}
 
+	section.sponsor .wrapper {
+		max-width: 95vw;
+	}
+
+	section.sponsor .wrapper .title > h2 {
+		font-size: 2.75rem;
+	}
+
+	section.sponsor .wrapper .content > .thing .title {
+		font-size: 1.70rem;
+	}
+
+	section.sponsor .wrapper .content > .thing .block {
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	section.sponsor .wrapper .content > .thing .block:hover > p {
+		font-size: 0.9rem;
+		max-width: 40ch;
+	}
+
+	section.sponsor .wrapper .content > .thing .text {
+		font-size: 1rem;
+	}
+	
+	section.email-reminder .wrapper button {
+		font-size: 2rem;
+	}
+
+	section.patrons .wrapper .title > h2 {
+		font-size: 2.5rem;
+	}
+
+	section.patrons .wrapper .content .thing > h3 {
+		font-size: 1.5rem;
+	}
+
+	section.patrons .wrapper {
+		max-width: 90vw;
+	}
+
 }
 
 @media (max-width: 1000px) {
@@ -231,6 +450,27 @@ section.sponsor {
 	section.intro .wrapper .left button.donate {
 		font-size: 1.5rem;
 		padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+	}
+
+	section.sponsor .wrapper {
+		max-width: 100vw;
+	}
+
+	section.email-reminder .wrapper button {
+		font-size: 2rem;
+		padding: 1rem 2rem 1rem 2rem;
+	}
+
+	section.patrons .wrapper .title > h2 {
+		font-size: 2.25rem;
+	}
+
+	section.patrons .wrapper .content .thing {
+		height: 50vh;
+	}
+
+	section.patrons .wrapper .content .thing > h3 {
+		font-size: 1rem;
 	}
 
 }
@@ -337,11 +577,57 @@ section.sponsor {
 		line-height: 1.6;
 	}
 
+	section.sponsor .wrapper {
+		max-width: 90vw;
+		padding: 15vh 0rem 10vh 0rem;
+	}
 
+	section.sponsor .wrapper .title > h2 {
+		font-size: 2.5rem;
+	}
 
+	section.sponsor .wrapper .content {
+		padding-top: 5vh;
+		display: flex;
+		flex-direction: column;
+		gap: 15vh;
+	}
 
+	section.sponsor .wrapper .content > .thing .title {
+		font-size: 1.75rem;
+	}
 
+	section.sponsor .wrapper .content > .thing .block {
+		width: 60%;
+	}
 
+	section.sponsor .wrapper .content > .thing .block:hover > p {
+		display: none;
+	}
+
+	section.sponsor .wrapper .content > .thing .text {
+		font-size: 1.1rem;
+	}
+
+	section.email-reminder .wrapper button {
+		font-size: 1.75rem;
+	}
+
+	section.patrons .wrapper .title > h2 {
+		font-size: 2.5rem;
+	}
+
+	section.patrons .wrapper .content {
+		padding-top: 0vh;
+	}
+
+	section.patrons .wrapper .content .thing {
+		height: 40vh;
+	}
+
+	section.patrons .wrapper .content .thing > h3 {
+		font-size: 1.25rem;
+	}
 }
 
 
