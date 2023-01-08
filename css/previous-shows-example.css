@@ -1,0 +1,57 @@
+section.intro {
+	background: #eee;
+	padding: 8vh 0 12vh 0;
+	text-align: center;
+	color: #222;
+}
+
+section.intro > * {
+	margin-bottom: 0;
+}
+
+section.intro > h1 {
+	font-size: 4rem;
+}
+
+section.intro > h2 {
+	padding-top: 1vh;
+	font-size: 2rem;
+}
+
+section.photos {
+	padding-bottom: 20vh;
+	background: #eee;
+	position: relative;
+}
+
+section.photos .wrapper {
+	max-width: 80vw;
+	margin: auto;
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+section.photos .wrapper > a > img {
+	border-radius: 0.5rem;
+}
+
+section.photos button {
+	position: absolute;
+	left: 50%;
+	bottom: 10vh;
+	transform: translate(-50%, 0%);
+	background-color: #ff9344;
+	color: #111;
+	font-size: 2rem;
+	border-radius: 10px;
+	padding: 0.5rem 1rem;
+	margin-top: 2vh;
+	transition: color 0.1s ease-out;
+}
+
+section.photos button:hover {
+	color: #eee;
+}
+

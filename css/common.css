@@ -38,6 +38,10 @@ body {
 	overflow-x: hidden !important;
 }
 
+nav {
+	background-color: #e1b6ff !important;
+}
+
 nav a.nav-link {
 	margin-left: 1rem;
 }
@@ -58,6 +62,7 @@ nav a.nav-link:hover {
 footer {
 	width: 100vw;
 	background: #f2cef8;
+	background: #e1b6ff;
 }
 
 footer * {

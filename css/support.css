@@ -307,10 +307,62 @@ section.patrons .wrapper .content .thing .image > img {
 	object-fit: cover;
 }
 
+section.patrons .wrapper .content .thing .image > img:hover {
+	cursor: pointer;
+}
+
 section.patrons .wrapper .content .thing > h3 {
 	font-size: 1.75rem;
 }
 
+.my-modal {
+	display: none;
+}
+
+.my-modal .grey {
+	z-index: 10000;
+	position: fixed;
+	inset: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: #f2cef8;
+	opacity: 0.85;
+}
+
+.my-modal .box {
+	z-index: 20000;
+	padding: 4rem;
+	border-radius: 1rem;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #eee;
+	max-width: 90vw;
+}
+
+.my-modal .box > p {
+	color: #222;
+	max-width: 70ch;
+	font-size: 1.25rem;
+	line-height: 1.8;
+	margin-bottom: 0;
+}
+
+.my-modal .box > .fas {
+	right: 1.5rem;
+	top: 1rem;
+	font-size: 3rem;
+	position: absolute;
+	color: #111;
+	transition: 0.1s ease-out;
+}
+
+.my-modal .box > .fas:hover {
+	transition: 0.1s ease-out;
+	color: purple;
+	cursor: pointer;
+}
 
 @media (max-width: 2000px) {
 
@@ -373,6 +425,22 @@ section.patrons .wrapper .content .thing > h3 {
 		font-size: 2.5rem;
 	}
 
+	.my-modal .box {
+		padding: 3rem;
+	}
+
+	.my-modal .box > p {
+		width: 60vw;
+		font-size: 1rem;
+		line-height: 1.8;
+	}
+
+	.my-modal .box > .fas {
+		right: 1.5rem;
+		top: 0.5rem;
+		font-size: 3rem;
+	}
+
 }
 
 @media (max-width: 1200px) {
@@ -418,7 +486,7 @@ section.patrons .wrapper .content .thing > h3 {
 	section.sponsor .wrapper .content > .thing .text {
 		font-size: 1rem;
 	}
-	
+
 	section.email-reminder .wrapper button {
 		font-size: 2rem;
 	}
@@ -433,6 +501,22 @@ section.patrons .wrapper .content .thing > h3 {
 
 	section.patrons .wrapper {
 		max-width: 90vw;
+	}
+
+	.my-modal .box {
+		padding: 2rem;
+	}
+
+	.my-modal .box > p {
+		width: 60vw;
+		font-size: 1rem;
+		line-height: 1.7;
+	}
+
+	.my-modal .box > .fas {
+		right: 1rem;
+		top: 0.5rem;
+		font-size: 2.5rem;
 	}
 
 }
@@ -628,6 +712,25 @@ section.patrons .wrapper .content .thing > h3 {
 	section.patrons .wrapper .content .thing > h3 {
 		font-size: 1.25rem;
 	}
+
+	.my-modal .box {
+		padding: 2rem;
+		overflow-y: scroll !important;
+		max-height: 80vh;
+	}
+
+	.my-modal .box > p {
+		width: 80vw;
+		font-size: 1rem;
+		line-height: 1.6;
+	}
+
+	.my-modal .box > .fas {
+		right: 0.5rem;
+		top: 0.3rem;
+		font-size: 2.5rem;
+	}
+
 }
 
 

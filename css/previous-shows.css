@@ -1,13 +1,24 @@
 section.intro {
-	padding: 10vh 0rem 10vh 0rem;
-	background: #eee;
+	padding: 8vh 0rem 10vh 0rem;
+	background: #ac00b1;
 }
 
 section.intro > h1 {
 	font-weight: bold;
 	font-size: 5rem;
 	text-align: center;
-	color: #111;
+	color: #eee;
+	text-transform: uppercase;
+}
+
+.wave1 {
+	background-image: url('../media/waves/purple-wave-8.svg');
+	aspect-ratio: 1600/250;
+	width: 100vw;
+	margin-top: -6%;
+	background-repeat: repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 section.table {
@@ -23,6 +34,7 @@ section.table table {
 	width: 100rem;
 	max-width: 90%;
 	margin: auto;
+	background: #f2cef8;
 	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.05), -2px -2px 2px 1px rgba(0, 0, 0, 0.05);
 }
 
@@ -72,6 +84,78 @@ section.table table tbody tr td[rowspan] {
 }
 
 section.table table tbody tr:hover :not([rowspan]) {
+	color: #0070EE;
+}
+
+section.table table tbody tr td {
+	padding: 0.5rem 1rem;
+}
+
+section.table a {
+	color: #333;
+}
+
+section.table table tbody tr td[rowspan] ~ *,
+section.table table tbody tr td[rowspan] {
+	padding: 1rem 1rem 0.5rem 1rem;
+}
+
+@media (max-width: 600px) {
+
+section.intro {
+	padding: 5vh 0rem 8vh 0rem;
+}
+
+section.intro > h1 {
+	font-size: 3rem;
+}
+
+section.table table thead {
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	position: relative;
+}
+
+section.table table thead tr {
+	border: 0;
+}
+
+section.table table thead::after {
+	content: "";
+	width: 98%;
+	border-bottom: 1px dashed grey;
+	position: absolute;
+	margin: -1rem 1%;
+}
+
+section.table table thead tr td {
+	padding: 0.5rem 1rem 1.5rem 1rem;
+}
+
+section.table table thead tr td:nth-child(5),
+section.table table thead tr td:nth-child(4) {
+	text-align: center;
+}
+
+section.table table tbody > * {
+	font-size: 1rem;
+	border: 0;
+}
+
+section.table table tbody tr td:last-child,
+section.table table tbody tr td:nth-last-child(2) {
+	text-align: center;
+}
+
+section.table table tbody tr td {
+	transition: 0.1s linear;
+}
+
+section.table table tbody tr td[rowspan] {
+	pointer-events: none;
+}
+
+section.table table tbody tr:hover :not([rowspan]) {
 	color: #966fd6;
 }
 
@@ -82,6 +166,10 @@ section.table table tbody tr td {
 section.table table tbody tr td[rowspan] ~ *,
 section.table table tbody tr td[rowspan] {
 	padding: 1rem 1rem 0.5rem 1rem;
+}
+
+
+
 }
 
 

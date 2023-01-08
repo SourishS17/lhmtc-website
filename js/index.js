@@ -1,3 +1,10 @@
+var logo = document.querySelectorAll(".intro-wrapper .intro .text > img")[0];
+var heroTextOne = document.querySelectorAll(".intro-wrapper .intro .text > h2")[0];
+
+
+
+
+
 var cards = document.querySelectorAll("section.testimonials .testimonial-carousel > div.quotecard");
 
 var heights = [];
